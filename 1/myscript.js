@@ -9,5 +9,13 @@ console.log(parolaSplit);
 
 // inverto l'array
 
-parolaSplit.reverse();
-console.log(parolaSplit);
+var arrayReverse = parolaSplit.reverse();
+console.log(arrayReverse);
+
+// converto in stringa l'array invertito
+
+// var parolaReverse = arrayReverse.toString();
+// console.log(parolaReverse);
+
+var rev = arrayReverse.join("");
+console.log(rev);
