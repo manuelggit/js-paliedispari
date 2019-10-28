@@ -5,8 +5,14 @@
 var utente = prompt('pari o dispari?');
 console.log('Utente pari o dispari? ' + utente);
 
-var numUtente = prompt('scegli un numero da 1 a 5');
+var numUtente = parseInt(prompt('scegli un numero da 1 a 5'));
 console.log("Numero dell'utente " + numUtente);
 
 var numCpu = Math.floor((Math.random() * 5) + 1);
-// console.log("Numero del Cpu " + numCpu;
+
+var somma = numUtente + numCpu;
+console.log('la somma è = ' + somma);
+
+// function sum(somma){
+//   if(somma % 2)
+// }
