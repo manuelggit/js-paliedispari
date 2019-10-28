@@ -4,18 +4,21 @@
 var parola = prompt('scrivi una parola');
 console.log(parola);
 
-var parolaSplit = parola.split("");
-console.log(parolaSplit);
+// var parolaSplit = parola.split("");
+// console.log(parolaSplit);
+//
+// // inverto l'array
+//
+// var arrayReverse = parolaSplit.reverse();
+// console.log(arrayReverse);
+//
+// // converto in stringa l'array invertito
+//
+// // var parolaReverse = arrayReverse.toString();
+// // console.log(parolaReverse);
+//
+// var rev = arrayReverse.join("");
+// console.log(rev);
 
-// inverto l'array
-
-var arrayReverse = parolaSplit.reverse();
-console.log(arrayReverse);
-
-// converto in stringa l'array invertito
-
-// var parolaReverse = arrayReverse.toString();
-// console.log(parolaReverse);
-
-var rev = arrayReverse.join("");
+var rev = parola.split("").reverse("").join("");
 console.log(rev);
