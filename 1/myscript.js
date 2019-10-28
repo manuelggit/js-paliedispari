@@ -23,6 +23,8 @@ console.log(parola);
 var rev = parola.split("").reverse("").join("");
 console.log(rev);
 
+// stampo se è palindroma o no
+
 if(parola === rev){
   console.log('palindroma')
   document.getElementById('id').innerHTML = 'palindroma';
