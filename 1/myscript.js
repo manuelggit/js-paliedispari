@@ -22,3 +22,11 @@ console.log(parola);
 
 var rev = parola.split("").reverse("").join("");
 console.log(rev);
+
+if(parola === rev){
+  console.log('palindroma')
+  document.getElementById('id').innerHTML = 'palindroma';
+}else{
+  console.log('non è palindroma');
+  document.getElementById('id').innerHTML = 'non è palindroma';
+}
