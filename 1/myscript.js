@@ -6,3 +6,8 @@ console.log(parola);
 
 var parolaSplit = parola.split("");
 console.log(parolaSplit);
+
+// inverto l'array
+
+parolaSplit.reverse();
+console.log(parolaSplit);
