@@ -12,25 +12,29 @@ console.log("Numero dell'utente " + numUtente);
 // definisco il numCpu invocando la funzione numRandom
 var numCpu = numRandom(1,5);
 
-// sommo i due numeri
-var somma = numUtente + numCpu;
-console.log('la somma è = ' + somma);
-
-// if pari
-if (somma % 2 === 0) {
-  console.log('La somma è pari');
-} else {
-  console.log('La somma è dispari');
-}
+var vincitore = pariDispari(numUtente, numCpu);
+console.log('vince ' + vincitore);
 
 // FUNZIONI
 
-// creo una funzione per generare numeri random in un intervallo di valori
+// creo una funzione per generare numeri RANDOM in un intervallo di valori
 function numRandom(min, max) {
   // il computer genera il suo numero
   return Math.floor((Math.random() * (max - min + 1)) + min);
 }
 
+// creo la funzione PARI O DISPARI per ritornare pari o dispari
+function pariDispari (x,y){
+  // sommo i due numeri
+  var somma = x + y;
+  console.log('la somma è = ' + somma);
+  // if pari
+  if (somma % 2 === 0) {
+    return 'pari';
+  } else {
+    return 'dispari';
+  }
+}
 
 // function result() {
 //
