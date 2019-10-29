@@ -9,8 +9,11 @@ var utente = prompt('pari o dispari?');
 var numUtente = parseInt(prompt('scegli un numero da 1 a 5'));
 console.log("Numero dell'utente " + numUtente);
 
-// il computer genera il suo numero
-var numCpu = Math.floor((Math.random() * 5) + 1);
+// creo una funzione per generare numeri random in un intervallo di valori
+function numRandom(min, max) {
+  // il computer genera il suo numero
+  var numCpu = Math.floor((Math.random() * (max - min + 1)) + min);
+}
 
 // sommo i due numeri
 var somma = numUtente + numCpu;
