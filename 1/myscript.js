@@ -1,20 +1,25 @@
 // Una funzione per capire se la parola è palindroma
 
 // trasformo la stringa in un array
-var parola = prompt('scrivi una parola');
-console.log(parola);
+var inserimento = prompt('scrivi una parola');
+console.log(inserimento);
 
-// ciclo for al contrario
+// invoco la funzione palindroma
+palindroma(inserimento);
 
-var contraria = "";
-
-for(var i = parola.length -1; i >= 0; i = i - 1) {
-  contraria = contraria + parola[i];
-}
-if (contraria === parola) {
-  console.log('è palindroma');
-} else {
-  console.log('non è palindroma');
+// creo la funzione palindroma
+function palindroma(parola){
+  // ciclo for al contrario
+  var contraria = "";
+  for(var i = parola.length -1; i >= 0; i = i - 1) {
+    contraria = contraria + parola[i];
+  }
+    // è palindroma o no?
+    if (contraria === parola) {
+      console.log('è palindroma');
+    } else {
+      console.log('non è palindroma');
+    }
 }
 
 // con split.reverse.join
