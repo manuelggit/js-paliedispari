@@ -11,7 +11,11 @@ var contraria = "";
 for(var i = parola.length -1; i >= 0; i = i - 1) {
   contraria = contraria + parola[i];
 }
-console.log(contraria);
+if (contraria === parola) {
+  console.log('è palindroma');
+} else {
+  console.log('non è palindroma');
+}
 
 // con split.reverse.join
 
