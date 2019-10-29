@@ -9,11 +9,8 @@ var utente = prompt('pari o dispari?');
 var numUtente = parseInt(prompt('scegli un numero da 1 a 5'));
 console.log("Numero dell'utente " + numUtente);
 
-// creo una funzione per generare numeri random in un intervallo di valori
-function numRandom(min, max) {
-  // il computer genera il suo numero
-  var numCpu = Math.floor((Math.random() * (max - min + 1)) + min);
-}
+// definisco il numCpu invocando la funzione numRandom
+var numCpu = numRandom(1,5);
 
 // sommo i due numeri
 var somma = numUtente + numCpu;
@@ -24,6 +21,14 @@ if (somma % 2 === 0) {
   console.log('La somma è pari');
 } else {
   console.log('La somma è dispari');
+}
+
+// FUNZIONI
+
+// creo una funzione per generare numeri random in un intervallo di valori
+function numRandom(min, max) {
+  // il computer genera il suo numero
+  return Math.floor((Math.random() * (max - min + 1)) + min);
 }
 
 
